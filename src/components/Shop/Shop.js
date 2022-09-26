@@ -2,6 +2,7 @@ import './Shop.css'
 
 import React, { useEffect, useState } from 'react';
 import Product from '../Product/Product';
+import Cart from '../Cart/Cart';
 
 const Shop = () => {
     // data lode
@@ -32,9 +33,8 @@ const Shop = () => {
                 }
             </div>
             <div className="cart-container">
-
-                <h3>oder</h3>
-                <p>Select Item:{cart.length}</p>
+                <Cart cart={cart}></Cart>
+                
             </div>
         </div>
     );
